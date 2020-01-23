@@ -1,0 +1,8 @@
+digital-wardrobe/db.sqlite3
+digital-wardrobe/ClosetMap/migrations/
+digital-wardrobe/ClosetMap/__pycache__/
+digital-wardrobe/DigitalWardrobe/__pycache__/
+digital-wardrobe/frontend/public/images/*
+digital-wardrobe/*.pyc
+digital-wardrobe/local_settings.py
+!digital-wardrobe/frontend/public/images/.gitkeep

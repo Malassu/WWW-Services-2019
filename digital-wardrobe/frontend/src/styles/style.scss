@@ -1,0 +1,126 @@
+@import 'foundation/colors';
+
+// Components
+@import 'components/homepage';
+@import 'components/wardrobe';
+
+.App {
+  margin-left: 20px;
+}
+
+input {
+  display: block;
+  margin: 5px 0 5px;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: $-c-secondary-cream;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+}
+
+a {
+  font-weight: bold;
+  color: $-c-primary-teal;
+}
+
+/* Landing page styles */
+.headerLogo {
+  width: 15rem;
+  background: radial-gradient(circle at center, $-c-secondary-cream 0%, $-c-secondary-cream 48%, rgba(0, 0, 0, 0.0) 48%);
+}
+
+.navbar {
+  background: $-c-primary-teal;
+}
+
+.slogan {
+  font-size: 1.8rem;
+  /* font-family: goodlife-sans,
+    sans-serif; */
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position-y: bottom;
+  /* background: linear-gradient(0deg, rgba(153, 125, 89, 0.3), rgba(153, 125, 89, 0.3)),
+    url('../resources/canvas.jpg'); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../resources/canvas.jpg');
+  background-size: cover;
+}
+
+/* Authentication forms */
+
+form {
+  text-align: center;
+  margin: auto;
+}
+
+form h1,
+form h2 {
+  text-align: left;
+  color: $-c-secondary-chocolate;
+}
+
+form a {
+  color: $-c-secondary-orange;
+  font-weight: bold;
+}
+
+.signup-form p {
+  text-align: left;
+}
+
+form input[type=submit],
+button {
+  color: white;
+  background-color: $-c-secondary-orange;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+}
+
+input[type=password],
+input[type=text] {
+  margin: auto;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form label {
+  margin-top: 1.5rem;
+}
+
+/* General styling for pages */
+.page-container {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Back button */
+button.back-button {
+  background-color: none;
+  background: none;
+  color: $-c-primary-teal;
+  font-weight: 600;
+}

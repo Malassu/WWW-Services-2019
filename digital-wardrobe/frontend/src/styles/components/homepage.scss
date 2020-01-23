@@ -1,0 +1,60 @@
+ul {
+  list-style-type: none;
+}
+
+.home-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.slides h2 {
+  font-size: 2.2rem;
+  font-family: 'Goodlife', sans-serif;
+  margin: 1rem 0;
+  color: $-c-secondary-orange;
+}
+
+.carousel-wardrobe img {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin isosceles-triangle($height, $width, $color) {
+  border-bottom: solid $height $color;
+  border-left: solid ($width/2) transparent;
+  border-right: solid ($width/2) transparent;
+}
+
+.slides {
+  position: relative;
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    background: none;
+    @include isosceles-triangle(1.2rem, 2rem, $-c-secondary-orange);
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    content: '';
+    font-family: none;
+    height: 2rem;
+  }
+
+  .slick-prev {
+    transform: rotate(-90deg);
+  }
+
+  .slick-next {
+    transform: rotate(90deg);
+  }
+
+  // Hide when class slick-disabled included
+  .slick-disabled {
+    border-color: transparent;
+  }
+}

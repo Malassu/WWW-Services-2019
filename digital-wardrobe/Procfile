@@ -1,0 +1,1 @@
+web: gunicorn DigitalWardrobe.wsgi --log-file -
